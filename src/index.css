@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content-div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
 }
+
+.content-div:hover{
+    background-image: linear-gradient(
+        to right,
+        rgba(104, 209, 81, 0.8),
+        hsla(157, 85%, 20%, 0.8)
+    )!important;
+}
+
